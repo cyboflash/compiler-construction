@@ -1,9 +1,6 @@
 #ifndef TOKENS_H
 #define TOKENS_H
 
-#include <string>
-#include <vector>
-
 typedef enum {
   ELSE,
   IF,
@@ -30,16 +27,9 @@ typedef enum {
   RBRACKET,
   LBRACE,
   RBRACE,
-  COMMENT_START,
-  COMMEN_END,
   ID,
   NUM,
-  WHITESPACE,
-  NUM_TOKENS
+  NUM_TOKEN_TYPES
 } TokenType;
-
-extern std::vector<std::string> Keywords;
-
-
 
 #endif

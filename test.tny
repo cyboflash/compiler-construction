@@ -1,0 +1,8 @@
+123 456 789
+these are all identifiers
+/*
+text inside the comments should be ignored
+*/
+
+/* text inside the comments should be ignored */
+?
