@@ -1,6 +1,6 @@
 %{
 #include "tokens.h"
-#include <string>  // std::string
+#include <string>  // std::string, std::to_string
 #include <map>     // std::map
 #include <fstream> // std::ifstream
 #include <iostream> // std::cout
@@ -70,7 +70,7 @@ ws      [ \t\n\r]+
 {ws} ;
 
 . { 
-  std::string msg = "ERROR: Unknown symbol: ";
+  std::string msg = "ERROR: Unknown symbol on line " + std::to_string(l.lineno()) + ": ";
   msg += l.YYText();
   l.LexerError(msg.c_str()); 
 }
