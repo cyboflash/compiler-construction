@@ -4,7 +4,6 @@
 
 int yylex();
 int yyerror();
-unsigned cnt = 0;
 %}
 
 %%
