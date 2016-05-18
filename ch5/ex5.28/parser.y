@@ -18,7 +18,8 @@ int yyerror();
 command : exp { printf("%d\n", $1); }
         ; /* allows printing of the result */
 
-exp : exp '+' term { $$ = $1 + $3; }
+exp : '-' exp { $$ = -$2; }
+    | exp '+' term { $$ = $1 + $3; }
     | exp '-' term { $$ = $1 - $3; }
     | term { $$ = $1; }
     ;
