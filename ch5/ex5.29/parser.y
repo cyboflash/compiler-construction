@@ -13,7 +13,7 @@ int yyerror();
 %token NUMBER
 
 %left  '+' '-' 
-%left  '*' '/' '%'
+%left  '*' '/'
 %right '^'
 
 %%
