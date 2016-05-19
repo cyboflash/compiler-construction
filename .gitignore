@@ -1,4 +1,6 @@
 scanner.cpp
 *.o
 *.out
+*.output
+parser.c
 scanner
